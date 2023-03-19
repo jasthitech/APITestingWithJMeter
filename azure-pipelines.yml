@@ -18,7 +18,7 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
 
 - script: |
-    unzip $(Pipeline.Workspace)/apache-jmeter-5.5-API-Tests.zip -d $(Pipeline.Workspace)/JMeterTests
-    cd $(Pipeline.Workspace)/JMeterTests/bin/Tests
-    $(Pipeline.Workspace)/JMeterTests/bin/jmeter -n -t API\ Tests.jmx -l ../results.jtl -e -o ../dashboard
+    unzip $(Pipeline.Workspace)/s/apache-jmeter-5.5-API-Tests.zip -d $(Pipeline.Workspace)/s/JMeterTests
+    cd $(Pipeline.Workspace)/s/JMeterTests/bin/Tests
+    $(Pipeline.Workspace)/s/JMeterTests/bin/jmeter -n -t API\ Tests.jmx -l ../results.jtl -e -o ../dashboard
   workingDirectory: $(Pipeline.Workspace)
