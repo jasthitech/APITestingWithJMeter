@@ -10,6 +10,7 @@ pool:
  name: Default
  vmImage: 'LAPTOP-VQ16APIQ'
 
+continueOnError: true
 steps:
 - task: DownloadPipelineArtifact@2
   inputs:
