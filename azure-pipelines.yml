@@ -15,7 +15,7 @@ steps:
   inputs:
     buildType: 'current'
     artifactName: 'apache-jmeter-5.5-API-Tests'
-    targetPath: '$(Pipeline.Workspace)'
+    targetPath: '$(Pipeline.Workspace)/s'
 
 - script: |
     unzip $(Pipeline.Workspace)/s/apache-jmeter-5.5-API-Tests.zip -d $(Pipeline.Workspace)/s/JMeterTests
